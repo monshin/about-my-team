@@ -1,26 +1,50 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --default-font-family: 'Roboto', 'Arial', 'Noto Sans TC', '黑體-繁',
+    '微軟正黑體', sans-serif;
+  --spacing: 1px;
+
+  --color-form-error: #e44d42;
+  --color-bg-btn-hover: #f2f2f2;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --fontSize-default: 16px;
   }
+
+  /* @media (prefers-color-scheme: dark) {
+    :root {
+    }
+  } */
+
+  html,
+  body {
+    width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-size: var(--fontSize-default);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #0a0a0a;
+      --foreground: #ededed;
+    }
+  } */
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .page-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+  }
 }
