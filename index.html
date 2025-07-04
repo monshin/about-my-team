@@ -3,22 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MMP 程式開發團隊</title>
+    <title>MMP 專業程式開發團隊</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body>
-    <nav class="fixed top-0 right-0 left-0 px-15 md:px-40 py-12">
+  <body class="bg-white">
+    <nav class="sticky top-0 w-screen px-3.75 md:px-10 py-3">
       <div
-        class="page-container flex flex-nowrap rounded-full text-white bg-black px-15 md:px-40 py-12"
+        class="flex flex-nowrap rounded-full text-white bg-black w-full max-w-(--maxWidth-page) m-auto px-3.75 md:px-10 py-3 shadow-[0_2px_2px_0_#00000040]"
       >
-        <div>MMP Team</div>
-        <div class="ml-auto flex gap-32">
+        <div>
+          <a class="text-lg font-bold" href="/">MMP Team</a>
+        </div>
+        <!-- <div class="ml-auto flex gap-8">
           <div>123</div>
           <div>456</div>
           <div>789</div>
-        </div>
+        </div> -->
       </div>
     </nav>
-    <main></main>
+    <main class="w-screen px-3.75 md:px-10">
+      <div class="w-full max-w-(--maxWidth-page) m-auto flex flex-col gap-5">
+        <div class="text-center text-xl font-bold">Project</div>
+        <div class="flex justify-center items-center gap-7.5">
+          <hr class="bg-black" width="60" />
+          <span class="text-3xl font-medium">實作專案</span>
+          <hr class="bg-black" width="60" />
+        </div>
+        <div class="flex flex-col gap-10"></div>
+      </div>
+    </main>
+    <footer class="text-white bg-black w-screen text-center">
+      <div class="flex flex-col gap-5 px-3.75 md:px-10 py-10">
+        <div>
+          <a class="text-3xl font-bold" href="/">MMP Team</a>
+        </div>
+        <div class="text-xl font-medium">與我們聯繫 py36032@gmail.com</div>
+      </div>
+      <div class="px-3.75 md:px-10 py-10 border-t-2 border-white">
+        <span class="text-base font-bold"
+          >CopyRight © 2025 Penny Chu All Rights Reserved.</span
+        >
+      </div>
+    </footer>
   </body>
 </html>
