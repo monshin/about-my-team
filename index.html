@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MMP 專業程式開發團隊</title>
     <meta
       name="description"
-      content="我們是 MMP 專業程式開發團隊，無論是專案開發、網站架設還是 APP 開發上的困難，我們都能為您提供解決方案。若您在程式或架站方面遇到問題，隨時歡迎與我們聯繫。"
+      content="我們是 MMP 程式開發團隊，擁有豐富的專案開發、網站與 APP 製作經驗。不論您遇到什麼程式或架站上的問題，都歡迎找我們聊聊，我們會為您提供最合適的解決方案！"
     />
 
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,23 +23,26 @@
   <body class="bg-white">
     <nav class="sticky top-0 w-screen px-3.75 md:px-10 py-3">
       <div
-        class="flex flex-nowrap rounded-full text-white bg-black w-full max-w-(--maxWidth-page) m-auto px-3.75 md:px-10 py-3 shadow-[0_2px_2px_0_#00000040]"
+        class="flex items-center justify-between rounded-full text-white bg-black w-full max-w-(--maxWidth-page) m-auto px-3.75 md:px-10 py-3 shadow-[0_2px_2px_0_#00000040]"
       >
-        <div>
-          <a class="text-lg font-bold" href="/">MMP Team</a>
+        <h1 class="text-lg font-bold m-0 p-0">
+          <button class="hover:text-gray-300" onclick="gotoTop()">MMP Team</button>
+        </h1>
+        <div class="ml-auto flex gap-8">
+          <a class="hover:text-gray-300" href="#section-project">精選專案</a>
+          <a class="hover:text-gray-300" href="#section-skill">技能</a>
+          <a class="hover:text-gray-300" href="#section-tool">工具</a>
         </div>
-        <!-- <div class="ml-auto flex gap-8">
-          <div>123</div>
-          <div>456</div>
-          <div>789</div>
-        </div> -->
       </div>
     </nav>
     <main class="w-screen px-3.75 md:px-10">
-      <div
-        class="w-full max-w-(--maxWidth-page) m-auto mb-10 flex flex-col gap-5"
+      <section
+        id="section-project"
+        class="w-full max-w-(--maxWidth-page) m-auto flex flex-col gap-5"
       >
-        <div class="text-center text-xl font-bold">Project</div>
+        <h2 class="text-center text-xl text-[#7f7f7f] font-bold m-0 p-0">
+          Project
+        </h2>
         <div class="flex justify-center items-center gap-7.5">
           <hr class="bg-black" width="60" />
           <span class="text-2xl font-medium">精選專案</span>
@@ -109,7 +112,236 @@
             <figcaption class="hidden"></figcaption>
           </figure>
         </div>
-      </div>
+      </section>
+      <section
+        id="section-skill"
+        class="w-full max-w-(--maxWidth-page) m-auto py-15 flex flex-col gap-5"
+      >
+        <h2 class="text-center text-xl text-[#7f7f7f] font-bold m-0 p-0">
+          Skill
+        </h2>
+        <div class="flex justify-center items-center gap-7.5">
+          <hr class="bg-black" width="60" />
+          <span class="text-2xl font-medium">技能</span>
+          <hr class="bg-black" width="60" />
+        </div>
+        <div class="text-base text-[#333333] text-justify">
+          我們 MMP 專業程式開發團隊，擅長使用
+          HTML、CSS、JavaScript、React、Next.js、Node.js、Python
+          ...等技術，提供網站架設、系統開發與 APP
+          製作服務，協助您快速實現各種開發需求。
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-5">
+          <figure
+            class="flex flex-col gap-2.5 justify-center items-center p-5 border-2 border-[#d5d5d5]"
+          >
+            <img
+              src="./images/icon/skill/Python_logo.svg"
+              alt="Python"
+              width="65"
+              height="65"
+            />
+            <figcaption class="">Python</figcaption>
+          </figure>
+          <figure
+            class="flex flex-col gap-2.5 justify-center items-center p-5 border-2 border-[#d5d5d5]"
+          >
+            <img
+              src="./images/icon/skill/Nodejs.png"
+              alt="Node.js"
+              width="94.07"
+              height="65"
+            />
+            <figcaption class="">Node.js</figcaption>
+          </figure>
+          <figure
+            class="flex flex-col gap-2.5 justify-center items-center p-5 border-2 border-[#d5d5d5]"
+          >
+            <img
+              src="https://nestjs.com/logo-small-gradient.d792062c.svg"
+              alt="NestJs"
+              width="65"
+              height="65"
+            />
+            <figcaption class="">NestJs</figcaption>
+          </figure>
+          <figure
+            class="flex flex-col gap-2.5 justify-center items-center p-5 border-2 border-[#d5d5d5]"
+          >
+            <img
+              src="./images/icon/skill/HTML.png"
+              alt="HTML"
+              width="65"
+              height="65"
+            />
+            <figcaption class="">HTML</figcaption>
+          </figure>
+          <figure
+            class="flex flex-col gap-2.5 justify-center items-center p-5 border-2 border-[#d5d5d5]"
+          >
+            <img
+              src="./images/icon/skill/CSS.png"
+              alt="CSS"
+              width="65"
+              height="65"
+            />
+            <figcaption class="">CSS</figcaption>
+          </figure>
+          <figure
+            class="flex flex-col gap-2.5 justify-center items-center p-5 border-2 border-[#d5d5d5]"
+          >
+            <img
+              src="./images/icon/skill/JS.png"
+              alt="JavaScript"
+              width="65"
+              height="65"
+            />
+            <figcaption class="">JavaScript</figcaption>
+          </figure>
+          <figure
+            class="flex flex-col gap-2.5 justify-center items-center p-5 border-2 border-[#d5d5d5]"
+          >
+            <img
+              src="./images/icon/skill/React_logo_light.svg"
+              alt="React"
+              width="65"
+              height="65"
+            />
+            <figcaption class="">React</figcaption>
+          </figure>
+          <figure
+            class="flex flex-col gap-2.5 justify-center items-center p-5 border-2 border-[#d5d5d5]"
+          >
+            <img
+              src="./images/icon/skill/Nextjs_logo.svg"
+              alt="Next.js"
+              width="65"
+              height="65"
+            />
+            <figcaption class="">Next.js</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section
+        id="section-tool"
+        class="w-full max-w-(--maxWidth-page) m-auto py-15 flex flex-col gap-5"
+      >
+        <h2 class="text-center text-xl text-[#7f7f7f] font-bold m-0 p-0">
+          Tool
+        </h2>
+        <div class="flex justify-center items-center gap-7.5">
+          <hr class="bg-black" width="60" />
+          <span class="text-2xl font-medium">工具</span>
+          <hr class="bg-black" width="60" />
+        </div>
+        <div class="text-base text-[#333333] text-justify">
+          我們 MMP 專業開發團隊，具備網站、系統與 APP 的全端開發能力，並熟悉
+          Figma、Photoshop、Google Analytics、Google Tag Manager、Google Ad
+          Manager ...等設計與數位行銷工具，提供從 UI
+          設計到流量分析、廣告投放的一站式解決方案。
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-5">
+          <figure
+            class="flex flex-col gap-2.5 justify-center items-center p-5 border-2 border-[#d5d5d5]"
+          >
+            <img
+              src="./images/icon/tool/Figma.png"
+              alt="Figma"
+              width="65"
+              height="65"
+            />
+            <figcaption class="">Figma</figcaption>
+          </figure>
+          <figure
+            class="flex flex-col gap-2.5 justify-center items-center p-5 border-2 border-[#d5d5d5]"
+          >
+            <img
+              src="./images/icon/tool/Illustrator.png"
+              alt="Illustrator"
+              width="65"
+              height="65"
+            />
+            <figcaption class="">Illustrator</figcaption>
+          </figure>
+          <figure
+            class="flex flex-col gap-2.5 justify-center items-center p-5 border-2 border-[#d5d5d5]"
+          >
+            <img
+              src="./images/icon/tool/Photoshop.png"
+              alt="Photoshop"
+              width="65"
+              height="65"
+            />
+            <figcaption class="">Photoshop</figcaption>
+          </figure>
+          <figure
+            class="flex flex-col gap-2.5 justify-center items-center p-5 border-2 border-[#d5d5d5]"
+          >
+            <img
+              src="./images/icon/tool/Sketch.png"
+              alt="Sketch"
+              width="65"
+              height="65"
+            />
+            <figcaption class="">Sketch</figcaption>
+          </figure>
+          <figure
+            class="flex flex-col gap-2.5 justify-center items-center p-5 border-2 border-[#d5d5d5]"
+          >
+            <img
+              src="./images/icon/tool/Canva.png"
+              alt="Canva"
+              width="65"
+              height="65"
+            />
+            <figcaption class="">Canva</figcaption>
+          </figure>
+          <figure
+            class="flex flex-col gap-2.5 justify-center items-center p-5 border-2 border-[#d5d5d5]"
+          >
+            <img
+              src="./images/icon/tool/Eagle.png"
+              alt="Eagle"
+              width="65"
+              height="65"
+            />
+            <figcaption class="">Eagle</figcaption>
+          </figure>
+          <figure
+            class="flex flex-col gap-2.5 justify-center items-center p-5 border-2 border-[#d5d5d5]"
+          >
+            <img
+              src="./images/icon/tool/GA.png"
+              alt="Google Analytics"
+              width="65"
+              height="65"
+            />
+            <figcaption class="">Google Analytics</figcaption>
+          </figure>
+          <figure
+            class="flex flex-col gap-2.5 justify-center items-center p-5 border-2 border-[#d5d5d5]"
+          >
+            <img
+              src="./images/icon/tool/GTM.png"
+              alt="Google Tag Manager"
+              width="65"
+              height="65"
+            />
+            <figcaption class="">Google Tag Manager</figcaption>
+          </figure>
+          <figure
+            class="flex flex-col gap-2.5 justify-center items-center p-5 border-2 border-[#d5d5d5]"
+          >
+            <img
+              src="./images/icon/tool/GAM.png"
+              alt="Google Ad Manager"
+              width="65"
+              height="65"
+            />
+            <figcaption class="">Google Ad Manager</figcaption>
+          </figure>
+        </div>
+      </section>
     </main>
     <footer class="text-white bg-black w-screen text-center">
       <div class="flex flex-col gap-5 px-3.75 md:px-10 py-10">
@@ -120,13 +352,22 @@
           與我們聯繫 <a href="mailto:mars@newkans.com">mars@newkans.com</a>
         </div>
       </div>
-      <div class="px-3.75 md:px-10 py-10 border-t-2 border-white">
+      <div class="px-3.75 md:px-10 py-10 border-t-2 border-[#6b6b6b]">
         <span class="text-base font-bold"
           >CopyRight © 2025 MMP Team All Rights Reserved.</span
         >
       </div>
     </footer>
 
+    <script>
+      function gotoTop() {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: 'smooth',
+        });
+      }
+    </script>
     <!-- <script src="https://scripts.sirv.com/sirv.js"></script>
     <div class="Sirv" data-src="https://demo.sirv.com/drill/drill.spin"></div>
     <script>
