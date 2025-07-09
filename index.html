@@ -3,22 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MMP 程式開發團隊</title>
+    <title>MMP 專業程式開發團隊</title>
+    <meta
+      name="description"
+      content="我們是 MMP 專業程式開發團隊，無論是專案開發、網站架設還是 APP 開發上的困難，我們都能為您提供解決方案。若您在程式或架站方面遇到問題，隨時歡迎與我們聯繫。"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body>
-    <nav class="fixed top-0 right-0 left-0 px-15 md:px-40 py-12">
+  <body class="bg-white">
+    <nav class="sticky top-0 w-screen px-3.75 md:px-10 py-3">
       <div
-        class="page-container flex flex-nowrap rounded-full text-white bg-black px-15 md:px-40 py-12"
+        class="flex flex-nowrap rounded-full text-white bg-black w-full max-w-(--maxWidth-page) m-auto px-3.75 md:px-10 py-3 shadow-[0_2px_2px_0_#00000040]"
       >
-        <div>MMP Team</div>
-        <div class="ml-auto flex gap-32">
+        <div>
+          <a class="text-lg font-bold" href="/">MMP Team</a>
+        </div>
+        <!-- <div class="ml-auto flex gap-8">
           <div>123</div>
           <div>456</div>
           <div>789</div>
-        </div>
+        </div> -->
       </div>
     </nav>
-    <main></main>
+    <main class="w-screen px-3.75 md:px-10">
+      <div
+        class="w-full max-w-(--maxWidth-page) m-auto mb-10 flex flex-col gap-5"
+      >
+        <div class="text-center text-xl font-bold">Project</div>
+        <div class="flex justify-center items-center gap-7.5">
+          <hr class="bg-black" width="60" />
+          <span class="text-2xl font-medium">精選專案</span>
+          <hr class="bg-black" width="60" />
+        </div>
+        <div class="flex flex-col gap-10">
+          <figure>
+            <a
+              href="https://web.bc3ts.net/"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+            >
+              <img
+                class="w-full"
+                src="/images/project/banner/bc3ts.png"
+                alt="爆料公社"
+              />
+            </a>
+            <figcaption class="hidden"></figcaption>
+          </figure>
+          <figure>
+            <img
+              class="w-full"
+              src="/images/project/banner/Archie's Garden.png"
+              alt="Archie's Garden 植物形象網站"
+            />
+            <figcaption class="hidden"></figcaption>
+          </figure>
+          <figure>
+            <img
+              class="w-full"
+              src="/images/project/banner/MSQY.png"
+              alt="MSQY 咖啡形象網站"
+            />
+            <figcaption class="hidden"></figcaption>
+          </figure>
+          <figure>
+            <img
+              class="w-full"
+              src="/images/project/banner/Quapni.png"
+              alt="Quapni 形象網站"
+            />
+            <figcaption class="hidden"></figcaption>
+          </figure>
+          <figure>
+            <img
+              class="w-full"
+              src="/images/project/banner/Donutes POS.png"
+              alt="Donutes 飲料業 POS"
+            />
+            <figcaption class="hidden"></figcaption>
+          </figure>
+          <figure>
+            <img
+              class="w-full"
+              src="/images/project/banner/Funcom POS.png"
+              alt="楓康 零售業 POS"
+            />
+            <figcaption class="hidden"></figcaption>
+          </figure>
+          <figure>
+            <img
+              class="w-full"
+              src="/images/project/banner/Taipei dbas.png"
+              alt="臺北市預算查詢平台"
+            />
+            <figcaption class="hidden"></figcaption>
+          </figure>
+        </div>
+      </div>
+    </main>
+    <footer class="text-white bg-black w-screen text-center">
+      <div class="flex flex-col gap-5 px-3.75 md:px-10 py-10">
+        <div>
+          <a class="text-3xl font-bold" href="/">MMP Team</a>
+        </div>
+        <div class="text-xl font-medium">
+          與我們聯繫 <a href="mailto:mars@newkans.com">mars@newkans.com</a>
+        </div>
+      </div>
+      <div class="px-3.75 md:px-10 py-10 border-t-2 border-white">
+        <span class="text-base font-bold"
+          >CopyRight © 2025 MMP Team All Rights Reserved.</span
+        >
+      </div>
+    </footer>
+
+    <!-- <script src="https://scripts.sirv.com/sirv.js"></script>
+    <div class="Sirv" data-src="https://demo.sirv.com/drill/drill.spin"></div>
+    <script>
+      fetch('https://httpbin.org/get')
+        .then(function (res) {
+          return res.json();
+        })
+        .then(function (res) {
+          console.log(res);
+        });
+    </script> -->
   </body>
 </html>

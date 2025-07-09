@@ -1,12 +1,11 @@
 @import 'tailwindcss';
 
 @theme {
-  --default-font-family: 'Roboto', 'Arial', 'Noto Sans TC', '黑體-繁',
-    '微軟正黑體', sans-serif;
-  --spacing: 1px;
+  --default-font-family: 'Noto Sans TC', sans-serif;
+  /* spacing defult 0.25 rem = 4 px */
+  /* --spacing: 1px; */
 
-  --color-form-error: #e44d42;
-  --color-bg-btn-hover: #f2f2f2;
+  --maxWidth-page: 1200px;
 }
 
 @layer base {
@@ -42,9 +41,4 @@
 }
 
 @layer utilities {
-  .page-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-  }
 }

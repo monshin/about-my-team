@@ -1,6 +1,6 @@
 {
   "name": "about-my-team",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "scripts": {
     "build-css": "npx @tailwindcss/cli -i ./input.css -o ./output.css --watch",
     "host": "serve -p 8080"
