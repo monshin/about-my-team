@@ -21,24 +21,54 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body class="bg-white">
-    <nav class="sticky top-0 w-screen px-3.75 md:px-10 py-3">
+    <nav class="fixed w-screen top-0 left-0 z-[5000] px-3.75 md:px-10 py-3">
       <div
-        class="flex items-center justify-between rounded-full text-white bg-black w-full max-w-(--maxWidth-page) m-auto px-3.75 md:px-10 py-3 shadow-[0_2px_2px_0_#00000040]"
+        class="flex items-center justify-between flex-wrap gap-5 rounded-3xl text-white bg-black w-full max-w-(--maxWidth-page) m-auto px-3.75 md:px-10 py-3 md:py-0 shadow-[0_2px_2px_0_#00000040]"
       >
         <h1 class="text-lg font-bold m-0 p-0">
-          <button class="hover:text-gray-300" onclick="gotoTop()">MMP Team</button>
+          <button id="logo" class="hover:text-gray-300">MMP Team</button>
         </h1>
-        <div class="ml-auto flex gap-8">
-          <a class="hover:text-gray-300" href="#section-project">精選專案</a>
-          <a class="hover:text-gray-300" href="#section-skill">技能</a>
-          <a class="hover:text-gray-300" href="#section-tool">工具</a>
+        <div class="block md:hidden">
+          <button
+            id="btn-navbar"
+            class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
+          >
+            <svg
+              class="fill-current h-3 w-3"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
         </div>
+        <ul
+          id="menu-navbar"
+          class="w-full hidden md:flex flex-col md:flex-row md:items-center md:w-auto gap-x-8 gap-y-5"
+        >
+          <li>
+            <a class="block hover:text-gray-300 py-2" href="#section-project">
+              精選專案
+            </a>
+          </li>
+          <li>
+            <a class="block hover:text-gray-300 py-2" href="#section-skill">
+              技能
+            </a>
+          </li>
+          <li>
+            <a class="block hover:text-gray-300 py-2" href="#section-tool">
+              工具
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
     <main class="w-screen px-3.75 md:px-10">
       <section
         id="section-project"
-        class="w-full max-w-(--maxWidth-page) m-auto flex flex-col gap-5"
+        class="w-full max-w-(--maxWidth-page) m-auto pt-20 flex flex-col gap-5"
       >
         <h2 class="text-center text-xl text-[#7f7f7f] font-bold m-0 p-0">
           Project
@@ -115,7 +145,7 @@
       </section>
       <section
         id="section-skill"
-        class="w-full max-w-(--maxWidth-page) m-auto py-15 flex flex-col gap-5"
+        class="w-full max-w-(--maxWidth-page) m-auto pt-20 pb-15 flex flex-col gap-5"
       >
         <h2 class="text-center text-xl text-[#7f7f7f] font-bold m-0 p-0">
           Skill
@@ -224,7 +254,7 @@
       </section>
       <section
         id="section-tool"
-        class="w-full max-w-(--maxWidth-page) m-auto py-15 flex flex-col gap-5"
+        class="w-full max-w-(--maxWidth-page) m-auto pt-20 pb-15 flex flex-col gap-5"
       >
         <h2 class="text-center text-xl text-[#7f7f7f] font-bold m-0 p-0">
           Tool
@@ -359,15 +389,18 @@
       </div>
     </footer>
 
-    <script>
-      function gotoTop() {
-        window.scrollTo({
-          top: 0,
-          left: 0,
-          behavior: 'smooth',
-        });
-      }
-    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js"
+      integrity="sha512-I1SRWCuHnqVwlUXfm2TNMDduALHE1LfFpbQtFPY2z33Jy0iJAEXBDgrRrBLbpVChGclfCB0Hfy0F8wLVJtIVPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./main.js"></script>
     <!-- <script src="https://scripts.sirv.com/sirv.js"></script>
     <div class="Sirv" data-src="https://demo.sirv.com/drill/drill.spin"></div>
     <script>
